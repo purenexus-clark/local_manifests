@@ -35,6 +35,4 @@
   <remove-project path="system/vold" name="android_system_vold" groups="pdk" remote="pure" revision="mm" />
   <project path="system/vold" name="purenexus-clark/android_system_vold" remote="github" revision="mm" />
   <project name="CyanogenMod/android_system_qcom" path="system/qcom" remote="github" revision="cm-13.0" />
-  <remove-project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="pure" revision="mm" />
-  <project path="packages/apps/Settings" name="purenexus-clark/android_packages_apps_Settings" remote="github" revision="mm" />
 </manifest>
