@@ -22,6 +22,8 @@
   <project path="hardware/qcom/camera" name="purenexus-clark/android_hardware_qcom_camera" remote="github" revision="mm"/>
   <remove-project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom" />
   <project path="hardware/qcom/display" name="purenexus-clark/android_hardware_qcom_display" remote="github" revision="mm"/>
+  <remove-project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
+  <project path="hardware/qcom/media" name="purenexus-clark/android_hardware_qcom_media" remote="github" revision="mm2"/>
   <remove-project path="art" name="android_art" groups="pdk" remote="pure" revision="mm" />
   <project path="art" name="purenexus-clark/android_art" remote="github" revision="mm" />
   <remove-project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
