@@ -24,15 +24,13 @@
   <project path="hardware/qcom/display" name="purenexus-clark/android_hardware_qcom_display" remote="github" revision="mm"/>
   <remove-project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
   <project path="hardware/qcom/media" name="purenexus-clark/android_hardware_qcom_media" remote="github" revision="mm2"/>
-  <remove-project path="art" name="android_art" groups="pdk" remote="pure" revision="mm" />
-  <project path="art" name="purenexus-clark/android_art" remote="github" revision="mm" />
   <remove-project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
   <project path="hardware/ril" name="purenexus-clark/android_hardware_ril" remote="github" revision="mm" />
   <remove-project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
   <project path="hardware/qcom/bt" name="purenexus-clark/android_hardware_qcom_bt" remote="github" revision="mm" />
   <remove-project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
   <project path="hardware/libhardware" name="purenexus-clark/android_hardware_libhardware" remote="github" revision="mm" />
-  <remove-project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" remote="pure" revision="mm" />
+  <remove-project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="pure" revision="mm" />
   <project path="frameworks/opt/telephony" name="purenexus-clark/android_frameworks_opt_telephony" remote="github" revision="mm2" />
   <remove-project path="system/vold" name="android_system_vold" groups="pdk" remote="pure" revision="mm" />
   <project path="system/vold" name="purenexus-clark/android_system_vold" remote="github" revision="mm2" />
