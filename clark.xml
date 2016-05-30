@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="purenexus-clark/android_device_motorola_clark" path="device/motorola/clark" remote="github" revision="mm2" />
+  <remove-project name="android_build"/>
+  <remove-project name="platform/external/dhcpcd"/>
+  <remove-project name="android_frameworks_opt_telephony" />
+  <remove-project name="platform/hardware/libhardware" />
+  <remove-project name="platform/hardware/qcom/bt" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/hardware/ril" />
+  <remove-project name="android_system_core" />
+  <remove-project name="android_system_vold" />
+  <remove-project name="android_vendor_nexus" />
   <project name="AICP/kernel_motorola_msm8992" path="kernel/motorola/msm8992" remote="github" revision="mm6.0" />
-  <project name="purenexus-clark/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="mm2" />
+  <project name="AOSPB/hardware_ril" path="hardware/ril-caf" remote="github" revision="mm6.0-caf" />
+  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
+  <project name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="github" revision="cm-13.0-caf" />
   <project name="CyanogenMod/android_hardware_sony_thermanager" path="hardware/sony/thermanager" remote="github" revision="cm-13.0" />
   <project name="CyanogenMod/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" revision="cm-13.0" />
-  <project name="CyanogenMod/android_device_qcom_common" path="device/qcom/common" remote="github" revision="cm-13.0" />
-  <project name="AOSPB/hardware_ril" path="hardware/ril-caf" remote="github" revision="mm6.0-caf" />
-  <project name="CyanogenMod/android_hardware_qcom_bt" path="hardware/qcom/bt-caf" remote="github" revision="cm-13.0-caf" />
-  <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="github" revision="cm-13.0" />
-  <project path="vendor/qcom/opensource/dataservices" name="CyanogenMod/android_vendor_qcom_opensource_dataservices" remote="github" revision="cm-13.0" />
-  <remove-project path="system/core" name="android_system_core" groups="pdk" remote="pure" revision="mm" />
-  <project path="system/core" name="purenexus-clark/android_system_core" remote="github" revision="mm2-moto" />
-  <remove-project path="build" name="android_build" groups="pdk" remote="pure" revision="mm" />
-  <project path="build" name="purenexus-clark/android_build" remote="github" revision="mm2" >
-    <copyfile src="core/root.mk" dest="Makefile" />
-  </project>
-  <remove-project path="vendor/nexus" name="android_vendor_nexus" remote="pure" revision="mm" />
-  <project path="vendor/nexus" name="purenexus-clark/android_vendor_nexus" remote="github" revision="mm2" />
-  <remove-project path="hardware/qcom/camera" name="platform/hardware/qcom/camera" groups="qcom" />
-  <project path="hardware/qcom/camera" name="purenexus-clark/android_hardware_qcom_camera" remote="github" revision="mm"/>
-  <remove-project path="hardware/qcom/display" name="platform/hardware/qcom/display" groups="qcom" />
-  <project path="hardware/qcom/display" name="purenexus-clark/android_hardware_qcom_display" remote="github" revision="mm"/>
-  <remove-project path="hardware/qcom/media" name="platform/hardware/qcom/media" groups="qcom" />
-  <project path="hardware/qcom/media" name="purenexus-clark/android_hardware_qcom_media" remote="github" revision="mm2"/>
-  <remove-project path="hardware/ril" name="platform/hardware/ril" groups="pdk" />
-  <project path="hardware/ril" name="purenexus-clark/android_hardware_ril" remote="github" revision="mm" />
-  <remove-project path="hardware/qcom/bt" name="platform/hardware/qcom/bt" groups="qcom" />
-  <project path="hardware/qcom/bt" name="purenexus-clark/android_hardware_qcom_bt" remote="github" revision="mm" />
-  <remove-project path="hardware/libhardware" name="platform/hardware/libhardware" groups="pdk" />
-  <project path="hardware/libhardware" name="purenexus-clark/android_hardware_libhardware" remote="github" revision="mm" />
-  <remove-project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" groups="pdk" remote="pure" revision="mm" />
-  <project path="frameworks/opt/telephony" name="purenexus-clark/android_frameworks_opt_telephony" remote="github" revision="mm2" />
-  <remove-project path="system/vold" name="android_system_vold" groups="pdk" remote="pure" revision="mm" />
-  <project path="system/vold" name="purenexus-clark/android_system_vold" remote="github" revision="mm2" />
   <project name="CyanogenMod/android_system_qcom" path="system/qcom" remote="github" revision="cm-13.0" />
-  <project path="external/libnfnetlink" name="CyanogenMod/android_external_libnfnetlink" remote="github" revision="cm-13.0"/>
+  <project name="purenexus-clark/android_device_motorola_clark" path="device/motorola/clark" remote="github" revision="mm2" />
+  <project name="purenexus-clark/proprietary_vendor_motorola" path="vendor/motorola" remote="github" revision="mm2" />
+  <project path="build" name="purenexus-clark/android_build" remote="github" revision="mm2" >
+      <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <project path="device/qcom/sepolicy" name="CyanogenMod/android_device_qcom_sepolicy" remote="github" revision="cm-13.0" />
+  <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" remote="github" revision="cm-13.0" />
   <project path="external/libnetfilter_conntrack" name="CyanogenMod/android_external_libnetfilter_conntrack" remote="github" revision="cm-13.0"/>
-  <remove-project path="external/dhcpcd" name="platform/external/dhcpcd"/>
-  <project path="external/dhcpcd" name="CyanogenMod/android_external_dhcpcd" remote="github" revision="cm-13.0"/>
+  <project path="external/libnfnetlink" name="CyanogenMod/android_external_libnfnetlink" remote="github" revision="cm-13.0" />
+  <project path="frameworks/opt/telephony" name="purenexus-clark/android_frameworks_opt_telephony" remote="github" revision="mm2" />
+  <project path="hardware/libhardware" name="purenexus-clark/android_hardware_libhardware" remote="github" revision="mm" />
+  <project path="hardware/qcom/bt" name="purenexus-clark/android_hardware_qcom_bt" remote="github" revision="mm" />
+  <project path="hardware/qcom/camera" name="purenexus-clark/android_hardware_qcom_camera" remote="github" revision="mm" />
+  <project path="hardware/qcom/display" name="purenexus-clark/android_hardware_qcom_display" remote="github" revision="mm" />
+  <project path="hardware/qcom/media" name="purenexus-clark/android_hardware_qcom_media" remote="github" revision="mm2" />
+  <project path="hardware/ril" name="purenexus-clark/android_hardware_ril" remote="github" revision="mm" />
+  <project path="system/core" name="purenexus-clark/android_system_core" remote="github" revision="mm2-moto" />
+  <project path="system/vold" name="purenexus-clark/android_system_vold" remote="github" revision="mm2" />
+  <project path="vendor/nexus" name="purenexus-clark/android_vendor_nexus" remote="github" revision="mm2" />
+  <project path="vendor/qcom/opensource/dataservices" name="CyanogenMod/android_vendor_qcom_opensource_dataservices" remote="github" revision="cm-13.0" />
 </manifest>
