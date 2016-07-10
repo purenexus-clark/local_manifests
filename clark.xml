@@ -11,6 +11,7 @@
   <remove-project name="platform/hardware/qcom/camera" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/ril" />
   <project name="AICP/kernel_motorola_msm8992" path="kernel/motorola/msm8992" remote="github" revision="mm6.0" />
   <project name="AOSPB/hardware_ril" path="hardware/ril-caf" remote="github" revision="mm6.0-caf" />
@@ -33,7 +34,10 @@
   <project path="hardware/qcom/bt" name="purenexus-clark/android_hardware_qcom_bt" remote="github" revision="mm" />
   <project path="hardware/qcom/camera" name="purenexus-clark/android_hardware_qcom_camera" remote="github" revision="mm2" />
   <project path="hardware/qcom/display" name="purenexus-clark/android_hardware_qcom_display" remote="github" revision="mm2" />
+  <project path="hardware/qcom/display-caf/msm8994" name="CyanogenMod/android_hardware_qcom_display" remote="github" revision="cm-13.0-caf-8994" />
   <project path="hardware/qcom/gps" name="purenexus-clark/android_hardware_qcom_gps" remote="github" revision="mm2" />
+  <project path="hardware/qcom/media" name="purenexus-clark/android_hardware_qcom_media" remote="github" revision="mm2" />
+  <project path="hardware/qcom/media-caf/msm8994" name="CyanogenMod/android_hardware_qcom_media" remote="github" revision="cm-13.0-caf-8994" />
   <project path="hardware/ril" name="purenexus-clark/android_hardware_ril" remote="github" revision="mm2" />
   <project path="system/core" name="purenexus-clark/android_system_core" remote="github" revision="mm2-moto" />
   <project path="system/vold" name="purenexus-clark/android_system_vold" remote="github" revision="mm2" />
